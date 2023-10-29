@@ -1,0 +1,7 @@
+.checklist{
+    list-style-image: image(webdevelopment/Labo%206/Images/icons8-unchecked-checkbox-16.png);
+}
+
+.checked{
+    list-style-image: image(webdevelopment/Labo%206/Images/Checklist-Logo-PNG.png);
+}
