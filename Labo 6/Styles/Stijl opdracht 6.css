@@ -1,10 +1,9 @@
 .checklist{
-    list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b8/Checkbox_black_unchecked.png);
+    list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/7/79/Checkbox_0.svg);
     list-style-position: inside;
-
 }
 
 .checked{
-    list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e2/Checkbox_black_checked.png);
+    list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a2/Checkbox_1.svg);
     list-style-position: inside;
 }

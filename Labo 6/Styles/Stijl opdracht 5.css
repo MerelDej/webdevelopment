@@ -1,5 +1,6 @@
-p a {
+p {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/56/Chain_link_icon_slanted.png) ;
     background-repeat: no-repeat;
     background-size: 15px;
+    background-position-x: 145px;
 }
