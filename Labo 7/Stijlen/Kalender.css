@@ -23,6 +23,7 @@ tr:last-child > td:nth-last-of-type(1), tr:last-child >td:nth-last-of-type(2), t
 table{
     border: solid;
     border-width: 2px;
+    border-spacing: 0px;
 }
 
 td, th{
