@@ -1,0 +1,30 @@
+td:first-child, td:last-child{
+    background-color:  rgb(255, 220, 220);
+}
+
+tr:last-child > td:nth-last-of-type(1), tr:last-child >td:nth-last-of-type(2), tr:last-child >td:nth-last-of-type(3), tr:first-child > td:first-child{
+    background-color: darkgrey;
+    color: grey;
+}
+
+.zestiende{
+    background-color: rgb(250,120,120);
+}
+
+.month{
+    background-color: rgb(170,170,200);
+}
+
+.days{
+    background-color:  rgb(35,37,70);
+    color: rgb(200,190,240);
+}
+
+table{
+    border: solid;
+}
+
+th, td{
+    border: dotted;
+}
+

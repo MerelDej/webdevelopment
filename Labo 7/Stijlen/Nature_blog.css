@@ -1,0 +1,41 @@
+body{
+    font-family: Verdana;
+}
+
+body > section > header{
+    color: white;
+    background-image: url("../Images/header.jpg");
+    background-repeat: no-repeat;
+    height: 110px;
+    background-size: 100%;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+section > nav{
+    padding: 5px;
+    background-color: #444444;
+    font-weight: bold;
+}
+
+section > nav > a{
+    color: #56fd91;
+    text-decoration-line: none;
+    font-size: 10px;
+}
+
+article > header > h1{
+    color: #444444;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+article{
+    padding: 5px;
+    margin: 3px;
+    background-color: lightgray;
+}
+
+article > p, footer{
+    font-size: 14px;
+}
