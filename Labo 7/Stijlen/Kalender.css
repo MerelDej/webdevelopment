@@ -22,9 +22,15 @@ tr:last-child > td:nth-last-of-type(1), tr:last-child >td:nth-last-of-type(2), t
 
 table{
     border: solid;
+    border-width: 2px;
 }
 
-th, td{
-    border: dotted;
+td, th{
+    border-left-style: dotted;
+    border-top-style: dotted;
+    border-width: 1px;
 }
 
+td:first-child, th:first-child{
+    border-left-style: none;
+}
