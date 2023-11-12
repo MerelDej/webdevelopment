@@ -12,7 +12,6 @@ h2{
 
 nav{
     background-color: lightblue;
-    font-family: Verdana;
     padding: 10px;
     font-weight: bold;
 }
@@ -27,7 +26,6 @@ table{
     padding: 10px;
     border: none;
     width: 100%;
-    font-family: Verdana;
     text-align: center;
 }
 
@@ -49,6 +47,10 @@ th{
 
 p{
     white-space: pre-line;
-    font-family: Verdana;
     font-size: 13px;
+}
+
+body{
+    background-color: azure;
+    font-family: Verdana;
 }
