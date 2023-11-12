@@ -7,7 +7,6 @@ body > section > header{
     background-image: url("../Images/header.jpg");
     background-repeat: no-repeat;
     height: 110px;
-    background-size: 100%;
     padding-left: 10px;
     font-size: 30px;
 }
