@@ -37,3 +37,7 @@ h2{
 p{
     font-family: Verdana;
 }
+
+a{
+    text-decoration-line: none;
+}

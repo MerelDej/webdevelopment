@@ -17,25 +17,6 @@ nav{
     font-weight: bold;
 }
 
-section>section{
-    padding: 20px;
-    margin: 10px;
-}
-
-ol>li{
-    margin-top: 30px;
-    list-style-image: url("../Images/icons8-cloud-32.png");
-}
-
-body {
-    font-family: Verdana;
-    background-color: azure;
-}
-
-li{
-    white-space: pre-line;
-}
-
 a{
     text-decoration-line: none;
 }
