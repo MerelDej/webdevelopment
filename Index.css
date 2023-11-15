@@ -16,3 +16,8 @@ nav{
     padding: 10px;
     font-weight: bold;
 }
+
+body{
+    font-family: Verdana;
+    background-color: azure;
+}
