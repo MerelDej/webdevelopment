@@ -1,0 +1,36 @@
+h1{
+    font-size: 30px;
+    font-family: "Cooper Black";
+    text-align: center;
+    color: #EDF2F4;
+    background-image: url("/webdevelopment/Images/wp2647032.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-block: 20px;
+    margin: 0px;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+p{
+    margin: 3px;
+}
+
+li{
+    list-style-image: url("/Images/icons8-cloud-32.png");
+}
+
+nav{
+    background-color: lightblue;
+    font-family: Verdana;
+    padding: 10px;
+    font-weight: bold;
+}
+
+body{
+    font-family: Verdana;
+    background-color: azure;
+    white-space: pre-line;
+}
