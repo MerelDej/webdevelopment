@@ -18,8 +18,13 @@ p{
     margin: 3px;
 }
 
-li{
+body>ul>li{
     list-style-image: url("/webdevelopment/Images/icons8-cloud-32.png");
+}
+
+li>ul>li{
+    list-style-image: url("/webdevelopment/Images/icons8-cloud-15.png");
+    white-space: pre-line;
 }
 
 nav{
