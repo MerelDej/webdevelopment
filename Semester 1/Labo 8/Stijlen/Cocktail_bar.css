@@ -1,0 +1,83 @@
+header{
+    text-align: center;
+}
+
+body{
+    font-size: 1.2em;
+    width: 95%;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    padding-left: 30px;
+}
+
+h1, h2{
+    color: #007e7e;
+}
+
+h1{
+    font-size: 150%;
+}
+
+h2{
+    font-size: 130%;
+}
+
+.weekly{
+    text-align: center;
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+    border: solid 1px cadetblue;
+    padding: 15px;
+    margin: 10px 10px 10px 50px;
+    background-image: url("../images/cocktail.gif");
+    background-repeat: repeat-x;
+}
+
+article.weekly > h1{
+    color: black;
+}
+
+article.weekly > h2{
+    color: green;
+}
+
+footer{
+    font-size: 50%;
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding: 20px;
+}
+
+#guarantee{
+    font-style: italic;
+    margin: 30px;
+    padding: 20px 20px 20px 80px;
+    color: #444444;
+    background-color: #a7cece;
+    border-style: dotted;
+    border-color: #EDF2F4;
+    width: 80%;
+    background-image: url("../images/background.gif");
+    background-repeat: no-repeat;
+}
+
+body > section{
+    width: 70%;
+}
+
+a{
+    color: black;
+}
+
+article.weekly > p > a:hover{
+    background-color: sandybrown;
+}
+
+span:first-child{
+    font-style: italic;
+}
+
+span:last-child{
+    font-weight: bold;
+}
