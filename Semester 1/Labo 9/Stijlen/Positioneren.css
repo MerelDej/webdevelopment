@@ -1,0 +1,27 @@
+article:nth-child(odd) img{
+    float: left;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+article:nth-child(even) img{
+    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+article{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+}
+
+h2, p, img, article{
+    margin: 10px;
+}
+
+body{
+    font-size: 1.25em;
+}
+
