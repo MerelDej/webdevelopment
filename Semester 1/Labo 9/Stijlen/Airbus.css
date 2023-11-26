@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+    width: 95%;
+    font-family: Arial, Helvetica, san-serif;
+}
+
+body:first-child div{
+    height: 200px;
+    background-image: url("Semester 1/Labo 9/Images/bgsky3.jpg");
+    background-repeat: no-repeat;
+}
