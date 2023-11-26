@@ -4,8 +4,21 @@ body{
     font-family: Arial, Helvetica, san-serif;
 }
 
-body:first-child div{
+.airbustitel{
     height: 200px;
     background-image: url("Semester 1/Labo 9/Images/bgsky3.jpg");
     background-repeat: no-repeat;
+    text-align: center;
+    color: darkblue;
 }
+
+body:first-child > div:first-child > p{
+    font-weight: bold;
+    font-style: italic;
+}
+
+body:first-child > div:nth-child(2) > p{
+    font-weight: bold;
+
+}
+
