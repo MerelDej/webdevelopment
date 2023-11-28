@@ -15,30 +15,9 @@ Aandachtspunten :
 
 Beschrijving van de webpagina
 -----------------------------
-
-de eigenlijke inhoud van de pagina is 95% breed en gecentreerd in het browservenster
-
-alle tekst op de pagina gebruikt font Arial met reserves Helvetica en san-serif mocht Arial niet beschikbaar zijn
-
-"top" gebied
-	het vliegtuig komt uit 'tekklein.png'
-	let erop dat het vliegtuig VOOR de tekst komt
-	de rechterkant van het vliegtuig staat 90 pixels van de rand vandaan, de onderkant staat 60px van de rand
-	
-"main" gebied (linker blok)
-	dit gebied is 75% breed
-	(er is dus 10px lege ruimte tussen het main gedeelte en het news gedeelte
 	
 "introduction" gebied (met het airbus logo, zit in het main gedeelte)
-	witte achtergrond, zwarte tekst, tekst is uitgelijnd
 	de tekst staat boven en onder 20px van de rand af, rechts 30px
 	links en rechts van het logo is 20px lege ruimte (de afstand tussen tekst en logo is dus 20px)
 	het logo staat bovenaan 20px van de rand af, net als de tekst
 	de blauwe tekst heeft kleur 'blue' en is dik- en schuingedrukt
-	
-"gallery" gebied (links, zit in het main gedeelte)
-	elke foto zit in een fotokader
-		een witte ruimte van 10px dik (white)
-		daarrond een border van 1px in stippellijn (white/#999999)
-	tussen de fotokaders onderling is 20px afstand
-	de afstand tot de rand is eveneens 20px, maar aan de rechterkant mag het zonodig een pixeltje meer of minder zijn ;)

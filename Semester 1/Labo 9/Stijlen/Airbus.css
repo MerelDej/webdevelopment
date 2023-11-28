@@ -2,26 +2,33 @@ body{
     text-align: center;
     width: 95%;
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
 }
 
-header{
+body > header{
     height: 200px;
-    background-image: url("Semester 1/Labo 9/Images/bgsky3.jpg");
+    background-image: url("../Images/bgsky3.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;
     color: darkblue;
+    position: relative;
+    font-weight: bold;
 }
 
-header > p{
-    font-weight: bold;
+header:first-child{
     font-style: italic;
     font-size: 3em;
 }
 
-header:nth-child(2) > p{
-    font-weight: bold;
+header:nth-child(2){
     font-size: 2.4em;
+}
+
+header img{
+    right: 90px;
+    bottom: 60px;
+    position: absolute;
 }
 
 aside{
@@ -32,51 +39,116 @@ aside{
     border-color: #999999;
     color: #666666;
     font-size: 0.9em;
-    margin-left: 10px;
 }
 
 aside h3{
-    color: #EDF2F4;
+    color: white;
     background-color: blue;
     text-align: center;
     font-size: 1.2em;
 }
 
-article > div > figure > img{
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+            "a b c"
+            "d e f"
+            "g h i";
+}
+
+article > section:first-child{
+    grid-area: a;
+}
+article > section:nth-last-child(2){
+    grid-area: b;
+}
+article > section:nth-last-child(3){
+    grid-area: c;
+}
+article > section:nth-last-child(4){
+    grid-area: d;
+}
+article > section:nth-last-child(5){
+     grid-area: e;
+}
+article > section:nth-last-child(6){
+    grid-area: f;
+}
+article > section:nth-last-child(7){
+    grid-area: g;
+}
+article > section:nth-last-child(8){
+    grid-area: h;
+}
+article > section:last-child{
+    grid-area: i;
+}
+
+section > figure > img{
     width: 180px;
     height: 180px;
+    border-color: #999999;
+    border-width: 1px;
+    border-style: dashed;
+    margin: 20px 0 20px 20px;
+    padding: 10px;
+    background-color: white;
+
+}
+
+article > div{
+    background-color: white;
+    text-align: left;
+    color: black;
+    padding-block: 20px;
+    padding-right: 30px;
+    width: 75%;
+}
+
+span{
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+body > article > figure{
+    float: left;
+    text-align: justify;
+    padding-top: 20px;
 }
 
 article:nth-child(3) > section{
     background-color: #999999;
 }
 
-section > figure > img{
-    padding: 10px;
-    border-color: #999999;
-    border-width: 1px;
-    border-style: dotted;
-}
-
-body > section{
-    background-color: #666666;
-    color: #EDF2F4;
+.articlegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "a b";
     line-height: 2em;
-
+    background-color: #666666;
+    color: white;
+    padding-left: 120px;
+    text-align: left;
 }
-
-
-
-section article{
-    margin-left: 120px;
+.grid1{
+    grid-area: a;
+}
+.grid2{
+    grid-area: b;
 }
 
 section article a:hover{
     color: red;
 }
+a{
+    color: white;
+}
 
 footer{
     text-align: center;
     color: black;
-    background-color: #EDF2F4;
+    background-color: white;
 }
