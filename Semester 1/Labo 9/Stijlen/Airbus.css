@@ -1,24 +1,82 @@
 body{
     text-align: center;
     width: 95%;
-    font-family: Arial, Helvetica, san-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.airbustitel{
+header{
     height: 200px;
     background-image: url("Semester 1/Labo 9/Images/bgsky3.jpg");
     background-repeat: no-repeat;
+    background-size: 100%;
     text-align: center;
     color: darkblue;
 }
 
-body:first-child > div:first-child > p{
+header > p{
     font-weight: bold;
     font-style: italic;
+    font-size: 3em;
 }
 
-body:first-child > div:nth-child(2) > p{
+header:nth-child(2) > p{
     font-weight: bold;
+    font-size: 2.4em;
+}
+
+aside{
+    width: 25%;
+    float: right;
+    background-color: #dddddd;
+    border-width: 1px;
+    border-color: #999999;
+    color: #666666;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+aside h3{
+    color: #EDF2F4;
+    background-color: blue;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+article > div > figure > img{
+    width: 180px;
+    height: 180px;
+}
+
+article:nth-child(3) > section{
+    background-color: #999999;
+}
+
+section > figure > img{
+    padding: 10px;
+    border-color: #999999;
+    border-width: 1px;
+    border-style: dotted;
+}
+
+body > section{
+    background-color: #666666;
+    color: #EDF2F4;
+    line-height: 2em;
 
 }
 
+
+
+section article{
+    margin-left: 120px;
+}
+
+section article a:hover{
+    color: red;
+}
+
+footer{
+    text-align: center;
+    color: black;
+    background-color: #EDF2F4;
+}
