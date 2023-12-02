@@ -1,0 +1,20 @@
+body{
+    width: 95%;
+}
+
+.row > div:nth-child(odd){
+    background-color: lightgrey;
+}
+.row > div:nth-child(even){
+    background-color: grey;
+}
+.row{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.row div{
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    height: 200px;
+    margin-bottom: 20px;
+}
