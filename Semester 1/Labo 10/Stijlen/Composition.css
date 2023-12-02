@@ -1,0 +1,85 @@
+.grid-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.grid-item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid-item2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.grid-item3{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid-item4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+}
+.grid-item5{
+    grid-column-start: 3;
+    grid-column-end: 8;
+}
+.grid-item6{
+    grid-column-start: 11;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.grid-item7{
+    grid-column-start: 11;
+    grid-row-start: 5;
+}
+
+#a {
+    border: solid black;
+    border-width: 0 7.5px 15px 0px;
+    min-height: 165px;
+    background: rgb(255, 255, 255);
+}
+#b {
+    border: solid black;
+    border-width: 15px 7.5px 7.5px 0;
+    min-height: 190px;
+    background: rgb(255, 255, 255);
+}
+#c {
+    border: solid black;
+    border-width: 0 0 7.5px 7.5px;
+    min-height: 355px;
+    background: rgb(220, 40, 26);
+}
+#d {
+    border: solid black;
+    border-width: 7.5px 7.5px 0 0;
+    min-height: 150px;
+    background: rgb(0, 93, 159);
+}
+#e {
+    border: solid black;
+    border-width: 7.5px 7.5px 0 7.5px;
+    min-height: 150px;
+    background: rgb(255, 255, 255);
+}
+#f {
+    border: solid black;
+    border-width: 7.5px 0 12.5px 7.5px;
+    min-height: 75px;
+    background: rgb(255, 255, 255);
+}
+#g{
+    border: solid black;
+    border-width: 12.5px 0 0 7.5px;
+    min-height: 75px;
+    background-color: rgb(242, 224, 122);
+}
