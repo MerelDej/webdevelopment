@@ -1,0 +1,56 @@
+h2{
+    font-size: 30px;
+    font-family: "Cooper Black";
+    text-align: center;
+    color: #EDF2F4;
+    background-image: url("/Semester 1/Labo 7/Images/wp2647032.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-block: 20px;
+    margin: 0px;
+}
+
+nav{
+    background-color: lightblue;
+    padding: 10px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+td, th{
+    padding: 11px 10px;
+}
+
+th{
+    background-color:#72C2CF;
+    color:#FFFFFF;
+    font-family: "Cooper Black";
+    font-size: 20px;
+}
+
+.alt{
+    background: #E1EEF4;
+    color: #00496B;
+}
+
+p{
+    white-space: pre-line;
+    font-size: 13px;
+}
+
+body{
+    background-color: azure;
+    font-family: Verdana;
+}

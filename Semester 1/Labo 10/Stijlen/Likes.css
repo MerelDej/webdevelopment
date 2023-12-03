@@ -1,0 +1,41 @@
+h2{
+    font-size: 30px;
+    font-family: "Cooper Black";
+    text-align: center;
+    color: #EDF2F4;
+    background-image: url("/Semester 1/Labo 7/Images/wp2647032.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-block: 20px;
+    margin: 0px;
+}
+
+nav{
+    background-color: lightblue;
+    font-family: Verdana;
+    padding: 10px;
+    font-weight: bold;
+}
+
+section>section{
+    padding: 20px;
+    margin: 10px;
+}
+
+ol>li{
+    margin-top: 30px;
+    list-style-image: url("/Semester 1/Labo 7/Images/icons8-cloud-32.png");
+}
+
+body {
+    font-family: Verdana;
+    background-color: azure;
+}
+
+li{
+    white-space: pre-line;
+}
+
+a{
+    text-decoration-line: none;
+}
