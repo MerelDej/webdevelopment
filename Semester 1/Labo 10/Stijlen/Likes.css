@@ -3,7 +3,7 @@ h2{
     font-family: "Cooper Black";
     text-align: center;
     color: #EDF2F4;
-    background-image: url("/Semester 1/Labo 7/Images/wp2647032.jpg");
+    background-image: url("../Images/wp2647032.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     padding-block: 20px;
@@ -24,7 +24,7 @@ section>section{
 
 ol>li{
     margin-top: 30px;
-    list-style-image: url("/Semester 1/Labo 7/Images/icons8-cloud-32.png");
+    list-style-image: url("../Images/icons8-cloud-32.png");
 }
 
 body {
