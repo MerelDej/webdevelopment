@@ -1,0 +1,194 @@
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body{
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    display: block;
+}
+
+.line {
+    border-bottom: #ebe8e8 solid 1px;
+}
+
+main{
+    display: block;
+}
+
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.header img {
+    height: 50px;
+    width: auto;
+}
+
+header span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px #8d99AE;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    padding: 10px 0 10px 0;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+nav li {
+    text-align: center;
+    list-style: none;
+    padding: 10px 0 10px 0;
+    border-right: #ebe8e8 solid 1px;
+    text-transform: uppercase;
+    color: #5b4746;
+    font-size: 13px;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+main {
+    border-top: #ebe8e8 solid 1px;
+}
+
+main header {
+    border-top: 1px solid #ebe8e8;
+    border-bottom: 0;
+    height: 500px;
+    background: url(../../BeginSituatie_Kitchn/BeginSituatie_Kitchn/images/headerimage.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    border-bottom: solid black 2px;
+    color: black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+main article, .recipes {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+main article {
+    margin-top: 50px;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+article section {
+    margin-right: 1.5em;
+    padding-top: 1rem;
+    border-top: #ddd solid 1px;
+}
+
+.kicker {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: #ff4d56;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+article section :nth-child(3) {
+    color: #666;
+    line-height: 2;
+}
+
+.auteur {
+    padding-right: 10px;
+    border-right: solid 1px #ebe8e8;
+    font-style: italic;
+}
+
+article section :nth-child(3) {
+    color: #666;
+    line-height: 2;
+}
+
+.Timestamp {
+    color: #666;
+    padding-left: 10px;
+}
+
+.recommended img {
+    padding-bottom: 25px;
+}
+
+#left {
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#left, #right {
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+
+#right {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width: 770px){
+    .header, nav, main article, .recipes {
+        width: 750px;
+    }
+    main header span {
+        font-size: 5em;
+    }
+}
