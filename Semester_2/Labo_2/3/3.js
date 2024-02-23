@@ -1,5 +1,2 @@
-//3
 let pElement=document.getElementById("txtOutput");
-pElement.innerHTML = 'Welkom!'
-
-//4
+pElement.innerHTML = 'Welkom!';
