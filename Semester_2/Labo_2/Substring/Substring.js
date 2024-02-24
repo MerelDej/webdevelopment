@@ -9,8 +9,8 @@ const substring = () => {
     let nrEen= document.getElementById("nummerEen");
     let nrTwee= document.getElementById("nummerTwee");
 
-    let resultaat = txtInput.substring(nrEen, nrTwee);
-    txtOutput.innerHTML = resultaat;
+    let g1 = parseInt(nrEen, 10)
+    let g2 = parseInt(nrTwee, 10)
+    txtOutput.innerHTML = txtInput.value.substring(g1, g2);
 }
-
 window.addEventListener('load',setup);
