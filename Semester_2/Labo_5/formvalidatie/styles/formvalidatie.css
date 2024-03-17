@@ -1,0 +1,11 @@
+body {
+    line-height: 2em;
+}
+
+.errorMessage {
+    color:red;
+}
+
+input.invalid {
+    border : solid 1px red;
+}
