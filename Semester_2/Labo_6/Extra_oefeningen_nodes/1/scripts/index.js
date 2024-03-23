@@ -1,5 +1,5 @@
 const setup = () => {
-	// deze code wordt pas uitgevoerd als de pagina volledig is ingeladen
+	let p = document.querySelector("p");
+    p.innerText = "Good job!";
 }
-
 window.addEventListener("load", setup);
