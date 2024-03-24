@@ -63,8 +63,6 @@ const save = () => {
     btn.setAttribute("type", "button");
     btn.setAttribute("id", "verwijder");
     kleur.appendChild(btn);
-    kleur.style.display = "flex";
-    kleur.style.justifyContent = "right";
 }
 
 const del = (i) => {
