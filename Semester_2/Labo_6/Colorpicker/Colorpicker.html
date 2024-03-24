@@ -8,20 +8,24 @@
 <body>
 	<div>
 		<div>
-			<p>Rood:&nbsp;<span id="txtOutput1">0</span></p>
-			<input type="range" class="slider" value="0" min="0" max="255" />
+			<div>
+				<p>Rood:&nbsp;<span id="txtOutput1">0</span></p>
+				<input type="range" class="slider" value="0" min="0" max="255" />
+			</div>
+			<div>
+				<p>Groen:&nbsp;<span id="txtOutput2">0</span></p>
+				<input type="range" class="slider" value="0" min="0" max="255" />
+			</div>
+			<div>
+				<p>Blauw:&nbsp;<span id="txtOutput3">0</span></p>
+				<input type="range" class="slider" value="0" min="0" max="255" />
+			</div>
 		</div>
 		<div>
-			<p>Groen:&nbsp;<span id="txtOutput2">0</span></p>
-			<input type="range" class="slider" value="0" min="0" max="255" />
+			<div class="color" />
 		</div>
-		<div>
-			<p>Blauw:&nbsp;<span id="txtOutput3">0</span></p>
-			<input type="range" class="slider" value="0" min="0" max="255" />
-		</div>
-		<div class="color" />
+		<input type="button" value="save" id="btn">
 	</div>
-	<input type="button" value="save" id="btn">
 	<div id="save"></div>
 	<script src="scripts/index.js"></script>
 </body>

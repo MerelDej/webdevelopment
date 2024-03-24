@@ -14,19 +14,19 @@ const setup = () => {
 }
 const updateR = () => {
     let sliders = document.getElementsByClassName("slider");
-    let txtOutput = document.getElementById("txtOutput1");
+    let txtOutput = document.getElementById("txtOutput1")
     txtOutput.innerHTML = sliders[0].value;
     return sliders[0].value;
 }
 const updateG = () => {
     let sliders = document.getElementsByClassName("slider");
-    let txtOutput = document.getElementById("txtOutput2");
+    let txtOutput = document.getElementById("txtOutput2")
     txtOutput.innerHTML = sliders[1].value;
     return sliders[1].value;
 }
 const updateB = () => {
     let sliders = document.getElementsByClassName("slider");
-    let txtOutput = document.getElementById("txtOutput3");
+    let txtOutput = document.getElementById("txtOutput3")
     txtOutput.innerHTML = sliders[2].value;
     return sliders[2].value;
 }
@@ -36,15 +36,23 @@ const color = () => {
     let blauw = updateB();
     return "rgb("+ rood +","+ groen +","+ blauw +")";
 }
-const change = () => {
-    let colors=document.getElementsByClassName("color");
-    colors[0].style.backgroundColor = color();
-}
 
 const save = () => {
     let s = document.getElementById("save");
     let nDiv = document.createElement("div");
+
+    let id = 0;
+    let saved = s.childNodes;
+    for(let i = 0; i < saved.length; i++){
+        id = parseInt(saved[saved.length-1].getAttribute("data-ID")) + 1;
+    }
+
     s.appendChild(nDiv);
+    nDiv.style.padding = "10px";
+    s.style.display = "flex";
+    s.style.flexDirection = "row";
+    nDiv.setAttribute("class", "kleur");
+    nDiv.setAttribute("data-ID", `${id}`);
     let kleur = document.createElement("div");
     kleur.style.backgroundColor = color();
     kleur.style.height = "100px";
@@ -54,11 +62,37 @@ const save = () => {
     btn.setAttribute("value", "X");
     btn.setAttribute("type", "button");
     btn.setAttribute("id", "verwijder");
-    nDiv.parentNode.appendChild(btn);
-    btn.style.float = "right";
-    kleur.style.boxSizing = "border-box";
-
-
+    kleur.appendChild(btn);
+    kleur.style.display = "flex";
+    kleur.style.justifyContent = "right";
 }
 
+const del = (i) => {
+    let div = i.currentTarget.parentElement;
+    let saved = document.querySelectorAll("#save > div")
+
+    for(let i = 0; i < saved.length; i++){
+        if(div.getAttribute("data-ID") === saved[i].getAttribute("data-ID")){
+            saved[i].remove();
+            saved[i].style.display = "none";
+            saved[i].style.padding = "0";
+        }
+    }
+    i.stopPropagation();
+    i.preventDefault();
+}
+
+const change = () => {
+    let colors=document.getElementsByClassName("color")[0];
+    colors.style.backgroundColor = color();
+    colors.style.borderRadius = "25px";
+
+    let blok = document.getElementsByClassName("kleur");
+    if(blok.length !== 0){
+        for(let i = 0; i < blok.length; i++){
+            let btn = blok[i].querySelector("#verwijder");
+            btn.addEventListener("click", del);
+        }
+    }
+}
 window.addEventListener("load", setup);

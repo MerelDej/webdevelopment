@@ -2,4 +2,12 @@
     width:100px;
     height:100px;
     border:1px solid black;
+    margin: 10px;
+}
+
+body {
+    display: flex;
+}
+
+body:first-child {
 }
