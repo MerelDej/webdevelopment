@@ -40,7 +40,11 @@ const bewaarBewerktePersoon = () => {
 const bewerkNieuwePersoon = () => {
     console.log("Klik op de knop nieuw");
     index = -1;
-    document.getElementById("lstPersonen").reset();
+    document.getElementById("txtVoornaam").value = "";
+    document.getElementById("txtFamilienaam").value = "";
+    document.getElementById("txtGeboorteDatum").value = "";
+    document.getElementById("txtEmail").value = "";
+    document.getElementById("txtAantalKinderen").value = "";
 };
 
 const toonPersoon = () => {
