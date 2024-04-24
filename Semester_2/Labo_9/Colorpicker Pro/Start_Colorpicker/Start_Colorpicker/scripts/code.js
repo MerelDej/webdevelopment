@@ -27,11 +27,11 @@ const saveSwatch = () => {
 };
 
 const setColorPickerFromSwatch = (event) => {
-    if (event.target.className=="swatch") {
+    if (event.target.className==="swatch") {
         let swatch = event.target;
-        document.getElementById("sldRed").value = rgb.red;
-        document.getElementById("sldGreen").value = rgb.green
-        document.getElementById("sldBlue").value = rgb.blue
+        document.getElementById("sldRed").value = swatch.getAttribute('data-red');
+        document.getElementById("sldGreen").value = swatch.getAttribute('data-green');
+        document.getElementById("sldBlue").value = swatch.getAttribute('data-blue');
 
 
         // helaas triggeren de .value wijzigingen niet automatisch
@@ -65,6 +65,5 @@ const update = () => {
 
     storeSliderValues();
 };
-
 
 window.addEventListener("load", initialize);

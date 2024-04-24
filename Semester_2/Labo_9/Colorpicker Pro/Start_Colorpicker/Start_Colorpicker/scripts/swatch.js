@@ -4,11 +4,8 @@ const addSwatchComponent = (red, green, blue) => {
 }
 
 const configureSwatch = (swatch, red, green, blue) => {
-
     swatch.setAttribute("data-red", red);
-
     swatch.setAttribute("data-green", green);
-
     swatch.setAttribute("data-blue", blue);
 
     swatch.style.background = "rgb(" + red + "," + green + "," + blue + ")";
@@ -34,5 +31,3 @@ const buildSwatchComponent = (red, green, blue) => {
         swatch.appendChild(btnDelete);
         return swatch;
     };
-
-
