@@ -1,24 +1,36 @@
-let global = {
-    arraySaved : []
+const storeSliderValues = () => {
+    let red = document.getElementById("sldRed").value
+    let green = document.getElementById("sldGreen").value;
+    let blue = document.getElementById("sldBlue").value;
+    let array = [];
+    array.push(red, green, blue);
+    localStorage.setItem("sliderValues", JSON.stringify(array));
 }
 
-const storeSliderValues = () => {
-
-};
-
 const restoreSliderValues = () => {
-
-};
+    let rgb = JSON.parse(localStorage.getItem("sliderValues"));
+    document.getElementById("sldRed").value = rgb[0];
+    document.getElementById("sldGreen").value = rgb[1];
+    document.getElementById("sldBlue").value = rgb[2];
+}
 
 const storeSwatches = () => {
-    // bouw een array met kleurinfo objecten
-    //let red = document.getElementById("sldRed").value
-    //let green = document.getElementById("sldGreen").value;
-    //let blue = document.getElementById("sldBlue").value;
-    //global.arraySaved.push(`rgb(${red}, ${green}, ${blue})`);
-    //let array = JSON.stringify(global.arraySaved);
-};
+    let swatches = document.getElementsByClassName("swatch");
+    let array = [];
+    for (let i of swatches) {
+        array.push(i.style.backgroundColor);
+    }
+    localStorage.setItem("swatches", JSON.stringify(array));
+}
 
 const restoreSwatches = () => {
-    //localStorage.getItem()
-};
+    let swatches = JSON.parse(localStorage.getItem("swatches"));
+    for (let i = 0; i < swatches.length; i++) {
+        let rgbString = swatches[i];
+        let rgbValues = rgbString.substring(4, rgbString.length - 1).split(",");
+        let r = parseInt(rgbValues[0]);
+        let g = parseInt(rgbValues[1]);
+        let b = parseInt(rgbValues[2]);
+        addSwatchComponent(r, g, b);
+    }
+}
