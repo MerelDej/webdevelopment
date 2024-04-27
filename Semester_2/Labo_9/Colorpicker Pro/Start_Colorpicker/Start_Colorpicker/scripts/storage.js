@@ -15,7 +15,7 @@ const restoreSliderValues = () => {
 }
 
 const storeSwatches = () => {
-    let swatches = document.getElementsByClassName("swatch");
+    let swatches = document.getElementsByClassName("saves");
     let array = [];
     for (let i of swatches) {
         array.push(i.style.backgroundColor);

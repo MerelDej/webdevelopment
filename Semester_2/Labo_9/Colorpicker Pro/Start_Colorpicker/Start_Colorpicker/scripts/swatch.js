@@ -18,7 +18,7 @@ const buildSwatchComponent = (red, green, blue) => {
         let btnDelete = document.createElement("input");
 
         // stel de swatch in
-        swatch.className = "swatch";
+        swatch.className = "swatch saves";
         configureSwatch(swatch, red, green, blue);
         swatch.addEventListener("click", setColorPickerFromSwatch);
 
