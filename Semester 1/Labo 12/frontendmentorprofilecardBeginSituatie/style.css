@@ -21,7 +21,7 @@ body {
 }
 
 /* profilecard krijgt afgeronde hoeken */
-.card {
+.kaart {
   background: url('images/bg-pattern-card.svg') no-repeat, white;
   border-radius: .5em;
   min-block-size: 20rem;
@@ -35,22 +35,22 @@ body {
 
 }
 
-.card .profile-picture-wrapper {
+.kaart .profile-picture-wrapper {
   order: -1;
   margin-block-start: 4.5em;
 }
 
-.card header {
+.kaart header {
   text-align: center;
   border-block-end: 1px solid hsl(0, 0%, 59%);
 }
 
-.card header div {
+.kaart header div {
   display: inline-block;
 }
 
 /* foto krijgt een cirkelvorm */
-.card img {
+.kaart img {
   border-radius: 100%;
   border: .25em solid white;
 }
@@ -59,7 +59,7 @@ body {
   font-weight: bold;
 }
 
-.card .stats {
+.kaart .stats {
   font-size: .75rem;
   inline-size: 100%;
   padding: 2em;
@@ -80,7 +80,7 @@ body {
   text-transform: uppercase;
 }
 
-.card .stats>* {
+.kaart .stats>* {
   text-align: center;
 }
 

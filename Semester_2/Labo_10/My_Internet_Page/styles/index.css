@@ -1,0 +1,58 @@
+body {
+    padding-top: 50px;
+}
+
+#result {
+    margin-top: 50px;
+}
+
+.card {
+    margin-top: 10px;
+}
+
+.google {
+    background-color: #4285f4 !important;
+}
+
+a.google-btn {
+    background-color: #ea4335;
+    color: #fbbc05;
+}
+
+.youtube {
+    background-color: #ff0000 !important;
+}
+
+a.youtube-btn {
+    background-color: #282828;
+}
+
+.twitter {
+    background-color: #1da1f2 !important;
+}
+
+a.twitter-btn {
+    background-color: #14171a;
+    color: #f5f8fa;
+}
+
+.instagram {
+    background-color: #c32aa3 !important;
+}
+
+a.instagram-btn {
+    background-color: #f46f30;
+    color: #ffdc7d;
+}
+
+a.instagram-btn, a.twitter-btn, a.google-btn, a.youtube-btn{
+    border: 0;
+}
+
+.google, .youtube, a.youtube-btn, .twitter, .instagram, #button {
+    color: #FFFFFF;
+}
+
+#button {
+    width: 100%;
+}
