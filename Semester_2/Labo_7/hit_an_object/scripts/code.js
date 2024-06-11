@@ -13,7 +13,7 @@ const setup = () => {
     let img = document.querySelector("img");
     img.addEventListener("click", hit);
     let btn = document.getElementById("btn");
-    btn = addEventListener("click", start);
+    btn.addEventListener("click", start);
 }
 
 const start = () => {
